@@ -5,13 +5,12 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 
 
-public class HelloWorldRunner implements ApplicationRunner {
+public class HelloWorldRunner implements ApplicationRunner {	
 	@Autowired
-	MyComponent myComponent;
+	private MyComponent myComponent;
 	
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 		myComponent.printHello();
 	}
-
 }
