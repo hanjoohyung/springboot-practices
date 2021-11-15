@@ -6,16 +6,14 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class MyApplication {
-	
+public class MyApplication {	
 	@Bean
 	public MyComponent myComponent() {
 		return new MyComponent();
 	}
 	
 	public static void main(String[] args) {
-		try(ConfigurableApplicationContext c = SpringApplication.run(MyApplication.class, args);) {
-			
-		}
+		try(ConfigurableApplicationContext c = SpringApplication.run(MyApplication.class, args)) {
+		}	
 	}
 }

@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.douzone</groupId>
-		<artifactId>springvoot-practices</artifactId>
+		<artifactId>springboot-practices</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>myweb</artifactId>
 	<packaging>jar</packaging>
-	
+
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
@@ -52,6 +52,7 @@
 			<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
 
+
 		<!-- spring boot test -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -61,7 +62,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>myweb</finalName>
+		<finalName>myapplication</finalName>
 		<plugins>
 			<!-- 스프링 부트 메이븐 플러그인 -->
 			<plugin>
